@@ -1,4 +1,5 @@
 # portfolio
 Konstantin Torkhov ui/ux design portfolio
 
-testing text
+Hello! I'm a web-designer and this is my portfolio project.
+Your welcome.
