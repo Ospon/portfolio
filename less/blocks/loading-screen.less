@@ -1,0 +1,77 @@
+@media (min-width: @desktop) {
+  .loading-screen {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/bg-logo-svg.svg') no-repeat left top;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding: 110px 0 0 70px;
+    }
+
+    &__image {
+      width: 40%;
+      background: url('../img/author-photo@1x.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    &__text-wrapper {
+      height: 40%;
+      margin: auto 0;
+      padding-right: 20px;
+    }
+
+    &__greeting-text {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 100px;
+      margin: 0px;
+      line-height: 100px;
+      font-weight: normal;
+    }
+
+
+
+    &__red-color {
+      color: #ff3030;
+    }
+
+    &__description {
+      font-size: 28px;
+      line-height: 70px;
+    }
+
+    &__scroll-wrapper {
+      position: relative;
+      padding-bottom: 110px;
+
+      span:before {
+        content: '';
+        position: absolute;
+        display: block;
+        background: url('../img/scroll-down.svg') no-repeat;
+        top: 35px;
+        left: 0px;
+        width: 28px;
+        height: 45px;
+      }
+
+      span:hover:before {
+        content: '';
+        position: absolute;
+        display: block;
+        background: url('../img/scroll-down.svg') no-repeat;
+        top: 35px;
+        left: 0px;
+        width: 28px;
+        height: 45px;
+      }
+    }
+  }
+}

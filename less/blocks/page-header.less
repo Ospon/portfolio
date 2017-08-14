@@ -1,0 +1,37 @@
+@media (min-width: @desktop) {
+  .page-header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    &__logotype {
+      width: 70%;
+    }
+
+    &__logotype-img {
+      padding: 10px 10px 10px 70px;
+    }
+
+    &__contacts {
+      width: 30%;
+      padding-right: 70px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 10px;
+    }
+
+    svg:hover path {
+      fill: @main-red;
+      transition: 0.5s;
+    }
+  }
+}

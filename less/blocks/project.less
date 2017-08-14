@@ -1,0 +1,45 @@
+@media (min-width: @desktop) {
+  .project {
+    width: 515px;
+    margin: 80px 20px 0px 20px;
+
+
+    &__img-wrapper {
+      width: 100%;
+
+    }
+
+    &__name-wrapper {
+      padding-top: 40px;
+      width: 70%;
+    }
+
+    &__name-inner {
+      width: 100%;
+    }
+
+    &__name {
+      text-decoration: none;
+      color: @second-color;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__arrow {
+      position: relative;
+      width: 25%;
+
+      span:before {
+        content: '';
+        position: absolute;
+        display: block;
+        background: url('../img/scroll-right.svg') no-repeat;
+        top: -55px;
+        right: -385px;
+        width: 65px;
+        height: 26px;
+      }
+    }
+  }
+}
