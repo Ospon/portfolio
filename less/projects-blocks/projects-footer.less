@@ -1,9 +1,10 @@
 @media (min-width: @desktop) {
-  .page-header {
-    position: absolute;
+  .projects-footer {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 70px;
+    margin-top: 10px;
 
     &__logotype {
       width: 70%;
@@ -15,7 +16,6 @@
 
     &__contacts {
       width: 30%;
-      padding-right: 70px;
     }
 
     &__list {
@@ -37,23 +37,22 @@
 }
 
 @media (min-width: @tablet) and (max-width: @desktop) {
-  .page-header {
-    position: absolute;
+  .projects-footer {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 70px;
 
     &__logotype {
       width: 70%;
     }
 
     &__logotype-img {
-      padding: 10px 10px 10px 40px;
+      padding: 10px 10px 10px 70px;
     }
 
     &__contacts {
       width: 30%;
-      padding-right: 40px;
     }
 
     &__list {
@@ -75,24 +74,19 @@
 }
 
 @media (min-width: @mobile) and (max-width: @tablet) {
-  .page-header {
+  .projects-footer {
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 10vh;
+    width: 100%;
 
     &__logotype {
+      width: 70%;
       display: none;
     }
 
     &__logotype-img {
-      padding: 10px 10px 10px 20px;
-    }
-
-    &__contacts {
-
-      padding-right: 20px;
+      padding: 10px 10px 10px 70px;
     }
 
     &__list {

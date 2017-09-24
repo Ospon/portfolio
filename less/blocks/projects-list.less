@@ -16,3 +16,42 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @desktop) {
+  .projects-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    &__title {
+      font-size: 70px;
+      width: 100%;
+      font-weight: normal;
+      text-align: left;
+      margin: 0px 40px 0px 40px;
+    }
+  }
+}
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .projects-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    &__title {
+      font-size: 50px;
+      width: 100%;
+      font-weight: normal;
+      text-align: left;
+      margin: 40px 0px 40px 0px;
+      padding-left: 20px;
+    }
+  }
+}

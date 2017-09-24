@@ -35,3 +35,79 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @desktop) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 40px;
+
+    &__logotype {
+      width: 70%;
+    }
+
+    &__logotype-img {
+      padding: 10px 10px 10px 70px;
+    }
+
+    &__contacts {
+      width: 30%;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 10px;
+    }
+
+    svg:hover path {
+      fill: @main-red;
+      transition: 0.5s;
+    }
+  }
+}
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__logotype {
+      display: none;
+    }
+
+    &__logotype-img {
+      padding: 10px 10px 10px 70px;
+    }
+
+    &__contacts {
+      width: 100%;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 10px;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 10px;
+    }
+
+    svg:hover path {
+      fill: @main-red;
+      transition: 0.5s;
+    }
+  }
+}
