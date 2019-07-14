@@ -149,15 +149,24 @@
 
     &__skills-list {
       list-style-type: none;
-      display: inline-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 100%;
       padding: 0;
 
       li {
         border: 1px solid #fff;
-        border-radius: 50px;
+        /* border-radius: 50px; */
         padding: 5px 20px;
-        margin-left: 10px;
+        margin-right: 10px;
         cursor: default;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
       }
 
       li:first-child {
@@ -201,8 +210,24 @@
         background-color: spin(@about-me, 220);
       }
 
+      li:nth-child(11) {
+        background-color: spin(@about-me, 120);
+      }
+
+      li:nth-child(12) {
+        background-color: spin(@about-me, 20);
+      }
+
+      li:nth-child(13) {
+        background-color: spin(@about-me, 220);
+      }
+      
+      li:nth-child(14) {
+        background-color: spin(@about-me, 720);
+      }
+
       li:hover {
-        opacity: 0.5;
+        // opacity: 0.5;
       }
     }
   }
