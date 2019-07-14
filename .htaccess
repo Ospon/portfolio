@@ -1,0 +1,11 @@
+RewriteCond %{HTTP_REFERER} ^http://ktorkhov.com.seocheckupx.net.(.*) [NC]
+RewriteRule .* - [F]
+
+RewriteCond %{HTTP_REFERER} ^https://semalt.com/.(.*) [NC]
+RewriteRule .* - [F]
+
+RewriteCond %{HTTP_REFERER} ^https://ktorkhov.com.seocheckupx.net.(.*) [NC]
+RewriteRule .* - [F]
+
+RewriteCond %{HTTP_REFERER} ^http://ktorkhov.com.seocheckupx.net/try.php?u=http://ktorkhov.com.(.*) [NC]
+RewriteRule .* - [F]

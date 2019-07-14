@@ -1,0 +1,54 @@
+.mailLink {
+  color: @second-color;
+  text-decoration: none;
+}
+.mailLink:hover {
+  color: @main-red;
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: @main-red;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid @main-red;
+  hyphens: none;
+}
+.btn:hover {
+  background-color: rgba(0,0,0,0);
+  transition: 0.5s;
+  color: @main-red;
+  border: 1px solid @main-red;
+}
+.title {
+
+}
+
+.mobilePhone {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 40px;
+  position: relative;
+}
+.mobilePhone:hover {
+  text-decoration: none;
+}
+.mobilePhone:before {
+  content: '';
+      position: absolute;
+      bottom: 3px;
+      left: 10px;
+      width: 23px;
+      height: 16px;
+      background: url(../img/CZ.png);
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+.noMobile {
+  display: none;
+}
+}
